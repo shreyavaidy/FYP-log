@@ -1,0 +1,18 @@
+Doc covers what the basics of MIst and its installation 
+
+Mist is like a browser for blockchain. It is the easiest way to get the look and feel of the entire blockchain.
+
+Starting with the explanation and information on how to start ethereum :
+https://github.com/ethereum/wiki/wiki/Ethereum-Development-Tutorial
+https://blog.ethereum.org/2016/07/12/build-server-less-applications-mist/
+
+  Installing MIST using:
+  https://github.com/ethereum/mist
+  
+  Mist required NPM and meteor the following dependencies:
+    - Electron
+    - Node v6.0
+    - Yarn package manager
+   
+This example of a blockchain application that can be run on the mist browser directly - STAKE VOICE
+https://github.com/ethereum/mist/releases/tag/0.8.0
