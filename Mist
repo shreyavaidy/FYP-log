@@ -8,11 +8,16 @@ https://blog.ethereum.org/2016/07/12/build-server-less-applications-mist/
 
   Installing MIST using:
   https://github.com/ethereum/mist
-  
+ 
   Mist required NPM and meteor the following dependencies:
     - Electron
     - Node v6.0
     - Yarn package manager
-   
+ 
+  Downloading a stable release of the Mist browser:
+  https://github.com/ethereum/mist/releases
+  Ideally, just pasting the link to a blockchain application URL on the mist browser should work. That same URL will not reflect on the normal browsers as it requires decentralised servers and blockchain technology to support its backend.
+  
+  
 This example of a blockchain application that can be run on the mist browser directly - STAKE VOICE
 https://github.com/ethereum/mist/releases/tag/0.8.0
