@@ -13,6 +13,18 @@ https://blog.ethereum.org/2016/07/12/build-server-less-applications-mist/
     - Electron
     - Node v6.0
     - Yarn package manager
+  
+  ERROR REPORT
+  git clone https://github.com/ethereum/mist.git
+Cloning into 'mist'...
+remote: Counting objects: 8669, done.
+remote: Compressing objects: 100% (66/66), done.
+error: RPC failed; result=56, HTTP code = 200 | 14.00 KiB/s     
+fatal: The remote end hung up unexpectedly
+fatal: early EOF
+fatal: index-pack failed
+
+ 
  
   Downloading a stable release of the Mist browser:
   https://github.com/ethereum/mist/releases
