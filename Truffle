@@ -1,0 +1,38 @@
+7.1.17
+
+
+http://ethereum101.org/tutorial/5  - installing Alethzero, Mist, Mix
+
+Ethereum index: http://www.ethdocs.org/en/latest/index.html
+
+Step 1:
+http://www.ethdocs.org/en/latest/ethereum-clients/cpp-ethereum/installing-binaries/osx-homebrew.html
+
+install node and npm, set $PATH in home directory
+
+>>>ethconsole		run command
+
+>>Trying truffle
+http://ethereum101.org/tutorial/4 - ethereum 101
+http://truffleframework.com/docs/getting_started/compile
+
+Notes:
+
+The go-ethereum client is commonly referred to as geth, which is the the command line interface for running a full ethereum node implemented in Go. By installing and running geth, you can take part in the ethereum frontier live network and:
+	•	mine real ether
+	•	transfer funds between addresses
+	•	create contracts and send transactions
+	•	explore block history
+	•	and much much more
+	•	
+
+Alethzero - ethconsole  - geth (create a full node)
+
+Truffle(contracts) - geth(eth client) - uses ether pudding
+
+
+Alethzero: wallet
+geth (node creation):  mine
+Mix :
+Mist (IDE): flavour of ethereum
+Truffle : geth iDE
