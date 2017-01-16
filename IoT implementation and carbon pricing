@@ -12,6 +12,6 @@ http://www.udoo.org/udoo-vs-beaglebone-black-vs-wandboard-vs-odroid-x2-vs-raspbe
 Example project to test IoT and Blockchain - https://github.com/DallasEthereum/IoT-Blink
 
 2. SENSORS TO USE
-
 > To measure carbon(CO2, CO, CH4) :
-    i. 
+    i.  MQ series
+    ii. NDIR sensor
