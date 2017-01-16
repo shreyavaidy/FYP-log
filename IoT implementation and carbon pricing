@@ -2,5 +2,16 @@
 > OPEN AQ - https://github.com/openaq/openaq-data-format
 > fsftn - http://opendata.fsftn.org/streams/ymkg3zJBGgF6vkZDw2M8I81JG9Q
 
+-> OPTIONS AVAILABLE :-
+* Arduino  * BeagleBone black * Wandboard *Odroid *RasberryPi
+
+http://www.udoo.org/udoo-vs-beaglebone-black-vs-wandboard-vs-odroid-x2-vs-raspberry-pi/
+
+- Ethereum platform documentation seems to support the following - Raspberry Pi, Odroid, BeagleBone Black, Wandboard
+
+Example project to test IoT and Blockchain - https://github.com/DallasEthereum/IoT-Blink
+
 2. SENSORS TO USE
-> To measure carbon : i. 
+
+> To measure carbon(CO2, CO, CH4) :
+    i. 
