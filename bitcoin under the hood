@@ -1,0 +1,16 @@
+
+What is bitcoin: https://www.youtube.com/watch?v=l9jOJk30eQs&spfreload=5
+detail: https://www.youtube.com/watch?v=Lx9zgZCMqXE
+written: http://www.imponderablethings.com/2013/07/how-bitcoin-works-under-hood.html
+
+Notes:
+
+Block chain architecture:
+account number : 34 digits
+public and private key- 51 digits
+Sender Receiver  addresses
+
+from, to, signature (key) - ecdsa
+
+hash - proof of work, nonce
+
