@@ -9,6 +9,8 @@ http://www.udoo.org/udoo-vs-beaglebone-black-vs-wandboard-vs-odroid-x2-vs-raspbe
 
 - Ethereum platform documentation seems to support the following - Raspberry Pi, Odroid, BeagleBone Black, Wandboard
 
+Sample hardware integrated code - https://github.com/LedgerHQ
+
 Example project to test IoT and Blockchain - https://github.com/DallasEthereum/IoT-Blink
 
 2. SENSORS TO USE
