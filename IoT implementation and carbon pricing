@@ -8,6 +8,17 @@
 http://www.udoo.org/udoo-vs-beaglebone-black-vs-wandboard-vs-odroid-x2-vs-raspberry-pi/
 
 - Ethereum platform documentation seems to support the following - Raspberry Pi, Odroid, BeagleBone Black, Wandboard
+Which one to choose?
+    Raspberry Pi        - Rs. 4499
+    Odroid XU3/XU4      - Rs. 7900
+    BeagleBone Black    - Rs. 4200
+    Wandboard           - Rs. 9730
+
+EthEmbedded has binaries for several of these platforms: 
+- Current "Home stead" ready images: http://ethembedded.com/?page_id=102 
+- BeagleBoneBlack (BBB) https://github.com/EthEmbedded/BBB-Eth-Install
+- 
+
 
 Sample hardware integrated code - https://github.com/LedgerHQ
 
@@ -17,3 +28,12 @@ Example project to test IoT and Blockchain - https://github.com/DallasEthereum/I
 > To measure carbon(CO2, CO, CH4) :
     i.  MQ series
     ii. NDIR sensor
+    
+From https://www.element14.com/community/community/design-challenges/in-the-air-design-challenge/blog/2014/11/10/carbon-footprint-monitoring--architecture
+- CC3200 as the main processor for both the indoor and outdoor sensor nodes.
+- MSP430 as the main processor for the Vehicle Emission sensor
+- Beagle Bone Black (AM335x) for the central hub
+- ACS712 for current sensor
+- MQ-135 + MQ-7 air quality sensor
+- HTU-21D digital temperature and humidity sensor
+
