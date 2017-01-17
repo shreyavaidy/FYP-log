@@ -4,6 +4,7 @@
 
 -> OPTIONS AVAILABLE :-
 * Arduino  * BeagleBone black * Wandboard *Odroid *RasberryPi
+****************---- Awesome, then we ll start working with BBB, worst case it doesn't match, we can switch to my pi. 
 
 http://www.udoo.org/udoo-vs-beaglebone-black-vs-wandboard-vs-odroid-x2-vs-raspberry-pi/
 
@@ -13,7 +14,8 @@ Which one to choose?
     Odroid XU3/XU4      - Rs. 7900
     BeagleBone Black    - Rs. 4200
     Wandboard           - Rs. 9730
-
+    
+*****************------- I choose BBB
 EthEmbedded has binaries for several of these platforms: 
 - Current "Home stead" ready images: http://ethembedded.com/?page_id=102 
 - BeagleBoneBlack (BBB) https://github.com/EthEmbedded/BBB-Eth-Install
@@ -28,6 +30,7 @@ Example project to test IoT and Blockchain - https://github.com/DallasEthereum/I
 > To measure carbon(CO2, CO, CH4) :
     i.  MQ series
     ii. NDIR sensor
+   
     
 From https://www.element14.com/community/community/design-challenges/in-the-air-design-challenge/blog/2014/11/10/carbon-footprint-monitoring--architecture
 - CC3200 as the main processor for both the indoor and outdoor sensor nodes.
@@ -37,3 +40,6 @@ From https://www.element14.com/community/community/design-challenges/in-the-air-
 - MQ-135 + MQ-7 air quality sensor
 - HTU-21D digital temperature and humidity sensor
 
+****************----- Awesome, we ll need to use only 2/3 one each for the GHG, HTU21D is a humidity sensor we wont use all that right?
+If you can select the 2 or 3 best sensors required for the project and reference optional ones like TMP36 is optional for HTU21D for 
+temperature... then you can include that in the documentation...
