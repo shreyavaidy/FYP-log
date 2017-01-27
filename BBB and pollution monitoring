@@ -1,0 +1,21 @@
+For personal reference and updating on github repo later :
+
+1. BBB (BeagleBone Black) set-up - http://elinux.org/BeagleBoardBeginners
+Shopping lists - https://code.google.com/archive/p/beagleboard/
+http://playground.arduino.cc/Main/MQGasSensors
+http://beagleboard.org/project/SensorCape/
+
+2. Measuring temperature with BBB - https://learn.adafruit.com/measuring-temperature-with-a-beaglebone-black?view=all 
+BBB project with carbon sensor eg - http://elinux.org/Remote-sensor-network
+http://elinux.org/EBC_Setup_Scripts
+http://davidegironi.blogspot.in/2014/01/cheap-co2-meter-using-mq135-sensor-with.html#.WIwBmbs8hCU
+
+3. http://www.indianjournals.com/ijor.aspx?target=ijor:inroads&volume=5&issue=1s&article=057
+IoT based environment parameter monitoring using Beaglebone Black for monitoring the major concentration of air pollutants gas has been developed. This system measures air pollutant likes CO and CO2 using semiconductor gas sensor and temperature and humidity using Temperature-Humidity sensor. This various sensors are interface with Beaglebone Black ADC channels and I2C channels. Sense data are transmitted to the ThingSpeak IoT cloud by Beaglebone Black. Person can read the real time pollutants level using android application, which gets the data form Thing Speak. The system will provide the warning when the pollutant level goes beyond predefined maximum value. The system is developed with low cost for developing country.
+
+3. Ethereum and BBB/RaspPi - https://www.reddit.com/r/ethereum/comments/52po3w/lets_build_an_army_of_ethereum_nodes/
+
+http://ethereum-infochain.blogspot.in/
+
+ALSO,
+Downloaded and installed MIX IDE. To be explored.
