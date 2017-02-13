@@ -1,125 +1,60 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
-{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;\f1\fswiss\fcharset0 ArialMT;\f2\fnil\fcharset0 Menlo-Regular;
-\f3\fnil\fcharset0 Menlo-Bold;}
-{\colortbl;\red255\green255\blue255;\red38\green38\blue38;\red16\green60\blue192;\red245\green245\blue245;
-\red47\green180\blue29;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww15200\viewh8400\viewkind0
-\deftab720
-\pard\pardeftab720\sl360\sa272\partightenfactor0
-{\field{\*\fldinst{HYPERLINK "http://www.ibm.com/internet-of-things/iot-news/announcements/private-blockchain/"}}{\fldrslt 
-\f0\fs32 \cf2 \expnd0\expndtw0\kerning0
-http://www.ibm.com/internet-of-things/iot-news/announcements/private-blockchain/}}
-\f0\fs32 \cf2 \expnd0\expndtw0\kerning0
- -  ibm iot blockchain\
-solar coins - {\field{\*\fldinst{HYPERLINK "http://hypernephelist.com/2016/05/26/exploring-the-blockchain-with-iot.html"}}{\fldrslt 
-\f1\fs26 \cf3 \ul \ulc3 http://hypernephelist.com/2016/05/26/exploring-the-blockchain-with-iot.html}}
-\f1\fs26 \cf3 \ul \ulc3 \
-\pard\pardeftab720\sl360\sa272\partightenfactor0
-{\field{\*\fldinst{HYPERLINK "https://souptacular.gitbooks.io/ethereum-tutorials-and-tips-by-hudson/content/private-chain.html"}}{\fldrslt \cf3 https://souptacular.gitbooks.io/ethereum-tutorials-and-tips-by-hudson/content/private-chain.html}}\ulnone  - private testnet setup\ul \
-Geth:\
-\pard\pardeftab720\sl360\sa272\partightenfactor0
-\cf0 \ulnone Terminal 1:\
-//geth - -dev attach	(server running, ipc endpoint)\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
+http://www.ibm.com/internet-of-things/iot-news/announcements/private-blockchain/ -  ibm iot blockchain
+solar coins - http://hypernephelist.com/2016/05/26/exploring-the-blockchain-with-iot.html
+https://souptacular.gitbooks.io/ethereum-tutorials-and-tips-by-hudson/content/private-chain.html - private testnet setup
+Geth:
+Terminal 1:
+//geth - -dev attach	(server running, ipc endpoint)
+//sudo geth --datadir /Documents/greencoin/data/ init CustomGenesis.json 
+//geth —datadir /Do../data/
+geth init genesis.json [in goethereum folder]
+geth —port 35555
+O/p:
+TEJALs-MacBook-Pro:go-ethereum tejalsatish$ geth --port 35555
+I0210 11:58:23.572233 cmd/utils/flags.go:615] WARNING: No etherbase set and no accounts found as default
+I0210 11:58:23.572391 ethdb/database.go:83] Allotted 128MB cache and 1024 file handles to /Users/tejalsatish/Library/Ethereum/geth/chaindata
+I0210 11:58:23.606824 ethdb/database.go:176] closed db:/Users/tejalsatish/Library/Ethereum/geth/chaindata
+I0210 11:58:23.607139 node/node.go:176] instance: Geth/v1.5.5-stable-ff07d548/darwin/go1.7.4
+I0210 11:58:23.607157 ethdb/database.go:83] Allotted 128MB cache and 1024 file handles to /Users/tejalsatish/Library/Ethereum/geth/chaindata
+I0210 11:58:23.641888 eth/backend.go:191] Protocol Versions: [63 62], Network Id: 1
+I0210 11:58:23.642107 eth/backend.go:219] Chain config: {ChainID: 0 Homestead: <nil> DAO: <nil> DAOSupport: false EIP150: <nil> EIP155: <nil> EIP158: <nil>}
+I0210 11:58:23.642881 core/blockchain.go:219] Last header: #0 [d4e56740…] TD=17179869184
+I0210 11:58:23.642894 core/blockchain.go:220] Last block: #0 [6650a0ac…] TD=1024
+I0210 11:58:23.642899 core/blockchain.go:221] Fast block: #0 [6650a0ac…] TD=1024
+I0210 11:58:23.643526 p2p/server.go:342] Starting Server
+I0210 11:58:25.752061 p2p/discover/udp.go:227] Listening, enode://8ab63849f23208554b7a4de02007792a303afc4c20ee2f588e92675e52d556ed228d4e67ecf1329b33161f659fba7416b3415e658121bb991b7828f99ff7fddd@[::]:35555
+I0210 11:58:25.752348 p2p/server.go:610] Listening on [::]:35555
+I0210 11:58:25.753976 node/node.go:341] IPC endpoint opened: /Users/tejalsatish/Library/Ethereum/geth.ipc
 
-\f2\fs22 \cf0 \kerning1\expnd0\expndtw0 \CocoaLigature0 //sudo geth --datadir /Documents/greencoin/data/ init CustomGenesis.json \
-\pard\pardeftab720\sl360\sa272\partightenfactor0
+Chain data created in : —datadir
+/Users/tejalsatish/Library/Ethereum/geth/chaindata
 
-\f1\fs26 \cf0 \expnd0\expndtw0\kerning0
-\CocoaLigature1 //geth \'97datadir /Do../data/\
-geth init genesis.json [in goethereum folder]\
-geth \'97port 35555\
-O/p:\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
+Creating a geth instance overtime with preset flag:
+1. goto Documents/greencoin/go-ethereum/
+2. geth —identity “Tejal” init genesis.json —port 35555 —datadir “/Users/tejalsatish/Library/Ethereum/geth/chaindata” —nodiscover
+3. in the wallet create new account, copy address.
+4. in the genesis.json,
+ "alloc": {
+                "0x194F11CfA5B3dFC78Ff71A9Fc94e1619DA37Dc51":
+                {"balance":"20000000000000000000" } 
+    }
+to initiate a balance
 
-\f2\fs22 \cf0 \kerning1\expnd0\expndtw0 \CocoaLigature0 TEJALs-MacBook-Pro:go-ethereum tejalsatish$ geth --port 35555\
-I0210 11:58:23.572233 cmd/utils/flags.go:615] WARNING: No etherbase set and no accounts found as default\
-I0210 11:58:23.572391 ethdb/database.go:83] Allotted 128MB cache and 1024 file handles to /Users/tejalsatish/Library/Ethereum/geth/chaindata\
-I0210 11:58:23.606824 ethdb/database.go:176] closed db:/Users/tejalsatish/Library/Ethereum/geth/chaindata\
-I0210 11:58:23.607139 node/node.go:176] instance: Geth/v1.5.5-stable-ff07d548/darwin/go1.7.4\
-I0210 11:58:23.607157 ethdb/database.go:83] Allotted 128MB cache and 1024 file handles to /Users/tejalsatish/Library/Ethereum/geth/chaindata\
-I0210 11:58:23.641888 eth/backend.go:191] Protocol Versions: [63 62], Network Id: 1\
-I0210 11:58:23.642107 eth/backend.go:219] Chain config: \{ChainID: 0 Homestead: <nil> DAO: <nil> DAOSupport: false EIP150: <nil> EIP155: <nil> EIP158: <nil>\}\
-I0210 11:58:23.642881 core/blockchain.go:219] Last header: #0 [d4e56740\'85] TD=17179869184\
-I0210 11:58:23.642894 core/blockchain.go:220] Last block: #0 [6650a0ac\'85] TD=1024\
-I0210 11:58:23.642899 core/blockchain.go:221] Fast block: #0 [6650a0ac\'85] TD=1024\
-I0210 11:58:23.643526 p2p/server.go:342] Starting Server\
-I0210 11:58:25.752061 p2p/discover/udp.go:227] Listening, enode://8ab63849f23208554b7a4de02007792a303afc4c20ee2f588e92675e52d556ed228d4e67ecf1329b33161f659fba7416b3415e658121bb991b7828f99ff7fddd@[::]:35555\
-I0210 11:58:25.752348 p2p/server.go:610] Listening on [::]:35555\
-I0210 11:58:25.753976 node/node.go:341] IPC endpoint opened: /Users/tejalsatish/Library/Ethereum/geth.ipc\
-\
-\pard\pardeftab720\sl360\sa272\partightenfactor0
+—testrpc //listening on port 8545
 
-\f1\fs26 \cf0 \expnd0\expndtw0\kerning0
-\CocoaLigature1 Chain data created in : \'97datadir\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
+geth --identity “Tejal” init genesis.json --rpc --rpcport “8545” --rpccorsdomain "*" --port "35555” --nodiscover --ipcapi "admin,db,eth,debug,miner,net,shh,txpool,personal,web3" --rpcapi "db,eth,net,web3" --autodag --networkid 1900 --nat "any" console
 
-\f2\fs22 \cf0 \kerning1\expnd0\expndtw0 \CocoaLigature0 /Users/tejalsatish/Library/Ethereum/geth/chaindata\
-\
-Creating a geth instance overtime with preset flag:\
-1. goto Documents/greencoin/go-ethereum/\
-2. geth \'97identity \'93Tejal\'94 init genesis.json \'97port 35555 \'97datadir \'93/Users/tejalsatish/Library/Ethereum/geth/chaindata\'94 \'97nodiscover\
-3. in the wallet create new account, copy address.\
-4. in the genesis.json,\
- "alloc": \{\
-                "0x194F11CfA5B3dFC78Ff71A9Fc94e1619DA37Dc51":\
-                \{"balance":"20000000000000000000" \} \
-    \}\
-to initiate a balance\
-\
-\
-\
-\
-\'97testrpc //listening on port 8545\
-\
-\pard\pardeftab720\sl320\partightenfactor0
-
-\fs28 \cf2 \cb4 \expnd0\expndtw0\kerning0
-\CocoaLigature1 geth --identity \'93Tejal\'94 init genesis.json --rpc --rpcport \'938545\'94 --rpccorsdomain "*" --port "35555\'94 --nodiscover --ipcapi "admin,db,eth,debug,miner,net,shh,txpool,personal,web3" --rpcapi "db,eth,net,web3" --autodag --networkid 1900 --nat "any" console
-\fs22 \cf0 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 \
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
-\cf0 \
-\
-\
-\
-\
-\
-\
 /* Trial
-\f1\fs26 \expnd0\expndtw0\kerning0
-\CocoaLigature1 \
-\pard\pardeftab720\sl360\sa272\partightenfactor0
+Terminal 2:
+geth attach ipc:/Users/tejalsatish/Library/Ethereum/geth.ipc
+> personal.newAccount('student')
+"0xb6fbb8a129b9e2e28adc1f6ace20d236267c0ebe"
+> miner.start()
+true
+> miner.stop()
+true		*/
 
-\b \cf0 \ul Terminal 2:
-\b0 \ulnone \
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
 
-\f2\fs22 \cf0 \kerning1\expnd0\expndtw0 \CocoaLigature0 geth attach ipc:/Users/tejalsatish/Library/Ethereum/geth.ipc\
-> personal.newAccount('student')\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
-\cf5 "0xb6fbb8a129b9e2e28adc1f6ace20d236267c0ebe"\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
-\cf0 > miner.start()\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
+Other:
+rpc install:
+npm install -g ethereumjs-testrpc
 
-\f3\b \cf0 true
-\f2\b0 \
-> miner.stop()\
-
-\f3\b true		*/\
-\
-\
-\
-\
-Other:\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
-
-\f2\b0 \cf0 rpc install:\
-\pard\pardeftab720\sl380\partightenfactor0
-
-\fs28 \cf2 \cb4 \expnd0\expndtw0\kerning0
-\CocoaLigature1 npm install -g ethereumjs-testrpc\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
-
-\fs22 \cf0 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 \
-}
